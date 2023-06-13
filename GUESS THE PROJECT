@@ -1,0 +1,20 @@
+#in random number()
+#guess the number____
+import random
+score=0;
+for i in range(11):
+    a=int(input("enter the number :"))
+    b=int(random.randint(0,9))
+    print(b);
+    
+    if a==b:
+     print("win ;")
+     score+=1;
+    elif a!=b:
+     print("lose")
+    
+print("SCORE:",score)    
+    
+   
+
+
