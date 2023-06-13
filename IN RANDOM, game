@@ -1,0 +1,29 @@
+# Mini-Projects
+# random ()
+import random
+for i in range(0,10):
+    c=input("enter your choice: ")
+    a=random.choice(["paper","scissors","stone"])
+    print("System option :",a)
+    print("user option:",c)
+    if c=="paper":
+        if a=="stone":
+            print("user win")
+        elif a=="scissors":
+            print("system win")
+    elif c=="stone":
+        if a=="paper":
+            print("user is win")
+        elif a=="scissors":
+            print("user win")
+    elif c=="scissors":
+        if a=="stone":
+            print("system win")
+        elif a=="paper":
+            print("system is win")
+    else:
+        print("enter the correct option !")
+    
+    if a==c:
+        print("DRAW :")
+            
