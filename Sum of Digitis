@@ -1,0 +1,9 @@
+#Sum of digits:
+a=(input("enter the number:"))
+b=len(a)
+print("digitis :",b)
+adds=0
+for i in a:
+    adds=adds+int(i);
+    
+print("sum of value :",adds)    
