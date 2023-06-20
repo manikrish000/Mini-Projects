@@ -1,0 +1,15 @@
+# maximum value:
+n=int(input("enter the range :"))
+user=[]
+s=0;
+for i in range(0,n):
+    num=int(input("enter the number :"))
+    user.append(num);
+print(user);
+for i in range(0,len(user)):    
+    if s>user[i]:
+        maxVal=s;
+    else:
+        s=user[i]
+       
+print(maxVal)
