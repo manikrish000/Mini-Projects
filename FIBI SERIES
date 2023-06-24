@@ -1,0 +1,15 @@
+#fibinocci series:
+
+
+a=int(input("enter the name :"))
+m=0
+n=1
+if a>0:
+    
+    for i in range(0,a):
+        print(m)
+        c=m;
+        m=n;
+        n=c+m;
+else:
+     print("enter the valid number ")
