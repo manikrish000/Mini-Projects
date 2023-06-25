@@ -1,0 +1,62 @@
+'''
+#class attributes
+class student():
+ name='mani'
+ age=22
+ gender='male'
+                
+print(getattr(student,'name',))
+print(getattr(student,'age',))    
+print(getattr(student,'gender')) 
+print(student.__dict__)
+del (student.gender)
+print(student.__dict__)
+s=student
+print(s.__dict__)
+print(s.name)
+s.name="devil"
+print(s.__dict__)
+def printall(self):
+    print(s,'name',)
+    print(s,'age',)   
+    
+s.printall()    
+''' 
+class userinfo:
+    def __init__(self,name,age,address,number):
+        self.name=name
+        self.age=age
+        self.address=address
+    
+        self.number=number
+    property    
+    def msg(self):
+        print(name ,"is",age," years old ,he is from",address)
+i=userinfo("mani",32,'mdu',12016124)
+print(i.name,i.age,i.address,i.number)
+print(i.msg)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+                
