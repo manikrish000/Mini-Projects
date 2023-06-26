@@ -1,0 +1,8 @@
+# find sum numbers adds:
+c=[]
+n=int(input("enter the range value :"))
+for i in range(0,n):
+    a=int(input("enter the number :"))
+    c.append(a)
+print(c)
+print(sum(c))
