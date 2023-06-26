@@ -1,0 +1,8 @@
+import datetime as dt
+user=int(input("enter the days :"))
+dt.day=user
+print(dt.day)
+if dt.day==365:
+    print("1 year ")
+    if dt.date>365:
+        dt.date-365
