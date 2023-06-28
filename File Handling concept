@@ -1,0 +1,19 @@
+#file handling conceptL:
+file=open("mani.txt.txt","r")
+# print(file.read())
+a=file.read()
+url=a.split(",")
+print(url)
+b=(url)
+for i in range(0 ,len(url)):
+    urlValue=url[i].split("/")
+    print(urlValue[3])
+    if(urlValue[3]=="workflow"):
+        wf = open("wff.txt", "a")
+        print(wf.write(url[i]))
+
+    elif (urlValue[3]=="project"):
+        pro = open("pro.txt", "a")
+        print(pro.write(url[i]))
+    else:
+        balval=open("pro.txt.txt","a")
